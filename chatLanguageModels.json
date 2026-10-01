@@ -1,0 +1,116 @@
+[
+	{
+		"name": "Copilot",
+		"vendor": "agent-host-copilotcli",
+		"settings": {
+			"auto": {}
+		}
+	},
+	{
+		"name": "Ollama",
+		"vendor": "ollama-models",
+		"url": "http://127.0.0.1:11434"
+	},
+	{
+		"name": "OpenAI Classic (completions)",
+		"vendor": "customendpoint",
+		"apiType": "chat-completions",
+		"models": [
+			{
+				"id": "qwen/qwen3.5-9b",
+				"name": "Qwen3.5 9B (OpenAI Classic)",
+				"url": "http://127.0.0.1:1234/v1/chat/completions",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 41000,
+				"maxOutputTokens": 8192
+			},
+			{
+				"id": "mistralai/ministral-3-3b",
+				"name": "Ministral 3 3B (OpenAI Classic)",
+				"url": "http://127.0.0.1:1234/v1/chat/completions",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 41000,
+				"maxOutputTokens": 8192
+			},
+			{
+				"id": "prism-ml/bonsai-27b",
+				"name": "Bonsai 27B (OpenAI Classic)",
+				"url": "http://127.0.0.1:1234/v1/chat/completions",
+				"toolCalling": true,
+				"vision": false,
+				"maxInputTokens": 41000,
+				"maxOutputTokens": 8192
+			}
+		]
+	},
+	{
+		"name": "OpenAI New (responses)",
+		"vendor": "customendpoint",
+		"apiType": "responses",
+		"models": [
+			{
+				"id": "qwen/qwen3.5-9b",
+				"name": "Qwen3.5 9B (OpenAI New)",
+				"url": "http://127.0.0.1:1234/v1/responses",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 41000,
+				"maxOutputTokens": 8192
+			},
+			{
+				"id": "mistralai/ministral-3-3b",
+				"name": "Ministral 3 3B (OpenAI New)",
+				"url": "http://127.0.0.1:1234/v1/responses",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 41000,
+				"maxOutputTokens": 8192
+			},
+			{
+				"id": "prism-ml/bonsai-27b",
+				"name": "Bonsai 27B (OpenAI New)",
+				"url": "http://127.0.0.1:1234/v1/responses",
+				"toolCalling": true,
+				"vision": false,
+				"maxInputTokens": 41000,
+				"maxOutputTokens": 8192
+			}
+		]
+	},
+	{
+		"name": "Anthropic (messages)",
+		"vendor": "customendpoint",
+		"apiType": "messages",
+		"models": [
+			{
+				"id": "qwen/qwen3.5-9b",
+				"name": "Qwen3.5 9B (Anthropic)",
+				"url": "http://127.0.0.1:1234/v1/messages",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 41000,
+				"maxOutputTokens": 8192
+			},
+			{
+				"id": "mistralai/ministral-3-3b",
+				"name": "Ministral 3 3B (Anthropic)",
+				"url": "http://127.0.0.1:1234/v1/messages",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 41000,
+				"maxOutputTokens": 8192
+			},
+			{
+				"id": "prism-ml/bonsai-27b",
+				"name": "Bonsai 27B (Anthropic)",
+				"url": "http://127.0.0.1:1234/v1/messages",
+				"toolCalling": true,
+				"vision": false,
+				"maxInputTokens": 41000,
+				"maxOutputTokens": 8192
+			}
+		]
+	}
+]
